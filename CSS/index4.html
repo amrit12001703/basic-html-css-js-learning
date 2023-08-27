@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is part pof CSS learning">
+    <meta name="author" content="Amrit Anand">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>My new Website</title>
+</head>
+
+<body>
+    <style>
+        .d1 {
+            background: lightskyblue;
+        }
+
+        .d2 {
+            background: lightsalmon;
+            /* justify-self: center; */
+        }
+
+        .d3 {
+            background: paleturquoise;
+            /* align-self: end; */
+        }
+
+        .d4 {
+            background: lightpink;
+        }
+
+        .d5 {
+            background: palegreen;
+            /* grid-column: 2/4;
+            grid-row: 2/4; */
+        }
+        .container{
+            font-size: 40px;
+            min-height: 300px;
+            width: 100%;
+            background: lightgray;
+            display: grid;
+            background-color: lightgray;
+            /* grid-template-columns: auto 50px 10% 2fr 1fr; */
+            /* grid-template-columns: 1fr 100px 2fr; */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-rows: 50px 50px; */
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-column-gap: 10px;
+            /* grid-gap: 10px 20px; */
+            /* justify-items: center; */
+            align-items: end;
+        }
+    </style>
+    <div class="container">
+        <div class="d1">1</div>
+        <div class="d2">2</div>
+        <div class="d3">3</div>
+        <div class="d4">4</div>
+        <div class="d5">5</div>
+    </div>
+</body>
+
+</html>
