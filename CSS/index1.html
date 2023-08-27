@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Thsi is for CSS learning">
+    <meta name="author" content="Amrit Anand">
+    <meta name="keywords" content="HTML, Tutorial, Interview">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Add google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        /* p{color: red;}*/
+        .red-text {
+            color: red;
+        }
+
+        p {
+            font-size: 16px;
+            font-family: monospace;
+        }
+
+        h2 {
+            font-family: Roboto, monospace;
+            background-color: blue;
+        }
+
+        .smaller-image {
+            width: 100px;
+        }
+
+        .thick-green-border {
+            border-color: green;
+            border-width: 10px;
+            border-style: solid;
+            /* border-radius: 10px; */
+            border-radius: 50%;
+        }
+
+        .silver-background {
+            background-color: silver;
+        }
+
+        #cat-photo-form {
+            background-color: green;
+        }
+        [type='checkbox']{
+            margin: 10px 0px 15px 0px;
+        }
+    </style>
+    <!-- <h2 style="color: red;">CatPhotoApp</h2> -->
+    <h2 class="red-text">CatPhotoApp</h2>
+    <main>
+        <p class="red-text">Click here to view more <a href="#">Cat Photos</a></p>
+
+        <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat"
+                alt="a cute orange cat lying on its back."></a>
+        <div class="silver-background">
+            <p>Things cats love:</p>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagn</li>
+
+            </ul>
+            <p>Top 3 things cats hate:</p>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+        </div>
+        <form id="cat-photo-form" action="/submit-cat-photo">
+            <label><input type="radio" name="indoor-outdoor" checked>Indoor</label>
+            <label><input type="radio" name="indoor-outdoor">Outdoor</label><br>
+            <label><input type="checkbox" name="indoor-outdoor" checked>Loving</label>
+            <label><input type="checkbox" name="indoor-outdoor">Lazy</label>
+            <label><input type="checkbox" name="indoor-outdoor">Energetic</label>
+        </form>
+    </main>
+</body>
+</html>

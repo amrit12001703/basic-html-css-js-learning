@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .inject-text{
+            margin-bottom: -25px;
+            text-align: center;
+        }
+        .box{
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+            text-align: center;
+        }
+        .outer-box{
+            background-color: yellow;
+            padding: 10px;
+        }
+        .inner-box-1{
+            background-color: crimson;
+            /* padding-top:10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px; */
+            /* padding: 20px 40px 20px 40px; */
+            padding: 1em;
+            /* margin-top:10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 10px; */
+            margin: 20px 40px 20px 40px;
+        }
+        .inner-box-2{
+            background-color: blue;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+    <div class="box outer-box">Margin
+        <div class="box inner-box-1">
+            <p>padding</p>
+        </div>
+        <div class="box inner-box-2">
+            <p>padding</p>
+        </div>
+    </div>
+</body>
+</html>

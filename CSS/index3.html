@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is the description of the website">
+        <meta name="author" content="Amrit Anand">
+        <meta name="keywords" content="HTML, Tutorial, Interview">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My New Website</title>
+    </head>
+    <body>
+        <!-- override classes -->
+        <style>
+            :root{
+                /* CSS variable */
+                /* --heading-color:skyblue; */
+            }
+            @media (max-width: 350px){
+                :root{
+                    --heading-color:coral;
+                }
+            }
+            body{
+                background-color:black;
+                font-family:monospace;
+                color: green;
+            }
+            #orange-text{
+                color: orange;
+            }
+            .pink-text{
+                color: pink !important;
+            }
+            .blue-text{
+                color: blue;
+            }
+            .heading-2{
+                /* we can override the var here */
+                color: var(--heading-color,red);
+            }
+        </style>
+        <h1 style="color:white" class="pink-text blue-text" id="orange-text">Hello World</h1>
+        <h1 class="heading-2">Hello World</h1>
+    </body>
+</html>
