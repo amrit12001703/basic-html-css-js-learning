@@ -1,72 +1,71 @@
 <!DOCTYPE html>
-<html>
-     <head>
-	     <meta charset="UTF-8">
-		 <meta name="description" content="This is my test page">
-		 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-	     <title>This is my title tag</title>
-	 </head>
-	 <body>
-         <p id="demo">Hello World</p>	
-		 <h1>This is my heading tag</h1>
-		 <p class="para">This is paragraph 1</p>
-		 <p class="para">This is paragraph 2</p>
-		 <p class="para">This is paragraph 3</p>
-		 <p class="para">This is paragraph 4</p>
-		 <div id="division">
-		     <div id="nested">
-			 <p>kjggkj</p>
-			 </div>
-		 </div>
-		 <h3>This is heading 3</h3>
-		 
-		 <button id="my-btn">Click</button>
-         <script>
-		     <!-- Finding Html Elements -->
-		     console.log(document.getElementById("demo"));
-			 console.log(document.getElementsByTagName("h1"));
-			 console.log(document.getElementsByClassName("para"));
-			 
-			 <!-- Changing HTML Elements -->
-			 document.getElementById("demo").innerHTML="See You Soon!!";
-			 document.getElementsByClassName("para")[0].src="rty";
-			 console.log(document.getElementsByClassName("para"));
-			 document.getElementById("demo").style.color="red";
-			 document.getElementsByTagName("h1")[0].setAttribute("style","color:green");
-			 
-			 <!-- Adding and Deleting elements 
-			             <!-- Create Element -->
-			 const para=document.createElement("h2");
-			 para.innerHTML="This is my heading 2 tag";
-			 document.body.append(para);
-			 console.log(document.getElementsByTagName("h2"));
-			 
-			             <!-- Remove Element -->
-			 const heading3=document.getElementsByTagName("h3")[0];
-			 document.body.removeChild(heading3);
-			 
-			             <!-- Append Element -->
-			 const ancTag=document.createElement("a");
-			 ancTag.innerHTML="click Here";
-			 document.body.append(ancTag);
-			 
-			             <!-- Replace Element -->
-			 const he3=document.createElement("h3");
-			 para.innerHTML="This is my heading 3 tag";
-			 const rplc=document.getElementById("nested");
-			 const prnt=document.getElementById("division");
-			 prnt.replaceChild(he3,rplc);
-			             <!-- Write into the HTML output stream -->
-			 document.write(" This is the text written through DOM");
-			 
-			 <!--Adding Event Handlers-->
-			 function print(){ 
-			 const clk=document.createElement("h2");
-			 para.innerHTML="clicked!!";
-			 document.body.append(clk);
-			 console.log(document.getElementsByTagName("h2"));
-			 }
-			 document.getElementById("my-btn").onclick=print;
-		 </script>		 
-	 </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Hello World</p>	
+    <h1>This is my heading tag</h1>
+    <p class="para">This is paragraph 1</p>
+    <p class="para">This is paragraph 2</p>
+    <p class="para">This is paragraph 3</p>
+    <p class="para">This is paragraph 4</p>
+    <div id="division">
+        <div id="nested">
+        <p>kjggkj</p>
+        </div>
+    </div>
+    <h3>This is heading 3</h3>
+    
+    <button id="my-btn">Click</button>
+    <script>
+        //  Finding Html Elements 
+        console.log(document.getElementById("demo"));
+        console.log(document.getElementsByTagName("h1"));
+        console.log(document.getElementsByClassName("para"));
+        
+        //  Changing HTML Elements 
+        document.getElementById("demo").innerHTML="See You Soon!!";
+        document.getElementsByClassName("para")[0].src="rty";
+        console.log(document.getElementsByClassName("para"));
+        document.getElementById("demo").style.color="red";
+        document.getElementsByTagName("h1")[0].setAttribute("style","color:green");
+        
+        //  Adding and Deleting elements 
+                    //  Create Element 
+        const para=document.createElement("h2");
+        para.innerHTML="This is my heading 2 tag";
+        document.body.append(para);
+        console.log(document.getElementsByTagName("h2"));
+        
+                    //  Remove Element
+        const heading3=document.getElementsByTagName("h3")[0];
+        document.body.removeChild(heading3);
+        
+                    //Append Element 
+        const ancTag=document.createElement("a");
+        ancTag.innerHTML="click Here";
+        document.body.append(ancTag);
+        
+                    // Replace Element
+        const he3=document.createElement("h3");
+        para.innerHTML="This is my heading 3 tag";
+        const rplc=document.getElementById("nested");
+        const prnt=document.getElementById("division");
+        prnt.replaceChild(he3,rplc);
+                   // Write into the HTML output stream
+        document.write(" This is the text written through DOM");
+        
+                  // Adding Event Handlers
+        function print(){ 
+        const clk=document.createElement("h2");
+        para.innerHTML="clicked!!";
+        document.body.append(clk);
+        console.log(document.getElementsByTagName("h2"));
+        }
+        document.getElementById("my-btn").onclick=print;
+    </script>		 
+</body>
 </html>
